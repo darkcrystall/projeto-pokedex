@@ -1,0 +1,96 @@
+/* importa a fonte "Oxanium" do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+/* remove margens e preenchimentos padrão de todos os elementos */
+* {
+    margin: 0; /* reseta a margem */
+    padding: 0; /* reseta o preenchimento */
+    box-sizing: border-box; /* bordas e preenchimento com tamanho total do elemento */
+    font-family: "Oxanium", cursive; /* define fonte padrão */
+}
+/* estiliza o corpo da página */
+body {
+    text-align: center; /* alinha o texto */
+    background: linear-gradient(to bottom, #3b68a1, #fff); /* fundo em gradiente */
+    min-height: 100vh; /* garante que o corpo tenha o mínimo de altura da janela do navegador */
+}
+/* estiliza a área principal */
+main {
+    display: inline-block; /* faz com que o main ocupe apenas o espaço necessário */
+    margin-top: 4%; /* adiciona um espaçamento em cima */
+    padding: 15px; /* preenchimento interno */
+    position: relative; /* define a posição relativa para ajustar elementos filhos */
+}
+/* define o tamanho máximo do pokedex */
+.pokedex {
+    width: 100%; /* define a largura com 100% do container pai */
+    max-width: 425px; /* define a largura máxima */
+}
+/* posiciona a imagem do pokémon */
+.imagem_pokemon {
+    position: absolute; /* posiciona a imagem em relação ao container pai */
+    bottom: 55%; /* move a imagem 55% da parte inferior do container */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translate(-63%, 20%); /* ajusta a posição com o posicionamento relativo */
+    height: 18%; /* define a altura das imagens como 18% (em relação ao container) */
+}
+/* estiliza a área que mostra os dados do pokémon */
+.dados_pokemon {
+    position: absolute; /* posiciona os dados em relação ao container pai */
+    font-weight: 600; /* define a fonte para um negrito */
+    color: #aaa; /* define a cor do texto como cinza claro */
+    top: 54.5%; /* define a posição superior */
+    right: 27%; /* define a posição a direita */
+    font-size: clamp(8px, 5vw, 25px); /* ajusta o tamanho da fonte entre 8px e 25px, se ajustando a largura */
+}
+/* estiliza o nome do pokémon */
+.nome_pokemon {
+    color: #363636; /* define a cor do texto como cinza escuro */
+    text-transform: capitalize; /* primeira letra maiúscula */
+}
+/* estiliza o formulário de busca */
+.formulario {
+    position: absolute; /* posiciona em relação ao container pai */
+    width: 65%;  /* define largura em relação ao pai */
+    top: 65%; /* define posição superior */
+    left: 13.5%; /* define posição à esquerda */
+}
+/* estiliza o campo da busca */
+.campo_busca {
+    width: 100%; /* define a largura */
+    padding: 4%; /* espaçamento interno */
+    outline: none; /* remove o contorno padrão */
+    border: 2px solid #333; /* define uma borda */
+    border-radius: 5px; /* arredonda as bordas */
+    font-weight: 600; /* define a fonre com negrito */
+    color: #747474; /* cor do texto cinza claro */
+    background-color: #e3e3e3; /* cor de fundo do container */
+    font-size: clamp(8px, 5vw, 1rem); /* ajusta o tamanho da fonte entre 8px e 1rem */
+    box-shadow: -3px 4px 0 #aaa, -5px 7px 0 #333; /* define sobreamento do container */
+}
+/* estiliza a área dos botões */
+.botoes {
+    position: absolute; /* posiciona o botão em relação ao pai */
+    bottom: 10%; /* move os botões para cima a partir da parte inferior */
+    left: 50%; /* centraliza horizontalmente */
+    width: 65%; /* define a largura em relação ao pai */
+    transform: translate(-57%, 0); /* ajusta a posiçao horizontal, com um deslocamento relativo */
+    display: flex; /* usa o layout flexbox para organizar os botões */
+    gap: 20px; /* define o espaçamento entre os botões */
+}
+/* estiliza os botões */
+.botao {
+    width: 50%; /* define largura de cada botão em relaçao ao pai */
+    padding: 4%; /* espaçamento interno */
+    border: 2px solid #333; /* borda cinza */
+    border-radius: 5px; /* bordas arrendondadas */
+    font-size: clamp(8px, 5vw, 1rem); /* tamanho da fonte que se ajusta entre 8px e 1rem */
+    font-weight: 600; /* fonte em negrito */
+    color: #fff; /* cor do texto branco */
+    background-color: #444; /* cor de fundo cinza */
+    box-shadow: -2px 3px 0 #333, -4px 6px 0 #000; /* sombreamento do container */
+}
+/* adiciona um efeito ao pressionar o botão */
+.botao:active {
+    box-shadow: inset -4px 4px 0 #333; /* torna o sombreamento interno */
+    font-size: 0.8rem; /* reduz o tamanho da fonte */
+}
