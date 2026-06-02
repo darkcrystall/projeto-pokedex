@@ -34,7 +34,7 @@ async function exibirPokemon(pokemon) {
     nomePokemon.innerHTML = dados.name;
     numeroPokemon.innerHTML = dados.id;
     imagemPokemon.src =
-      dados.sprites.version["generation-v"][
+      dados.sprites.versions["generation-v"][
         "black-white"
       ].animated.front_default;
     campoBusca.value = "";
