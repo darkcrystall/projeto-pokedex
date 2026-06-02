@@ -42,8 +42,8 @@ main {
     right: 27%; /* define a posição a direita */
     font-size: clamp(8px, 5vw, 25px); /* ajusta o tamanho da fonte entre 8px e 25px, se ajustando a largura */
 }
-/* estiliza o nome do pokémon */
-.nome_pokemon {
+/* estiliza o nome e número do pokémon */
+.nome_pokemon, .numero_pokemon {
     color: #363636; /* define a cor do texto como cinza escuro */
     text-transform: capitalize; /* primeira letra maiúscula */
 }
